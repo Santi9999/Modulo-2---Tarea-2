@@ -63,75 +63,77 @@
             </div>
                      </div>
        
-
-        <div class="Contenido">
-                <h2>Congressmen</h2>
-            <p>The major power of the House is to pass federal legislation that affects the
-                    entire country, although its bills must also be passed by the Senate and 
-                    further agreed to by the U.S. President before becoming law (unless both
-                     the House and Senate re-pass the legislation with a two-thirds majority
-                      in each chamber). The House has some exclusive powers: the power to 
-                      initiate revenue bills, to impeach officials (impeached officials are
-                       subsequently tried in the Senate), and to elect the U.S. President in 
-                       case there is no majority in the Electoral College.</p>
-               <p>Each U.S. state is represented in the House in proportion to its population
-                    as measured in the census, but every state is entitled to at least one representative. </p>
-        </div>
-                   
-        <div class="filtros">
-            <div class="botones">
-              <div> <b>Filter by Party</b></div>
-                 <div class= "espacioBotones"><input type="checkbox" id="rep" value= "R"> <label for="rep"> Republican</label></div>               
-                 <div class= "espacioBotones"><input type="checkbox" id="dem" value= "D"><label for="dem">Democrat</label></div>
-                 <div class= "espacioBotones"><input type="checkbox" id="ind" value= "I"><label for="ind">Independent</label></div>
-               </div>
-                    
-               <div class="botonDesplegable">
-                <div> <b>Filter by State</b></div>
-                <select id="Filtro">
-                    <option value="All" id="Filtro">ALL</option>
-                </select>
-              </div>
+                           
+              <div class="Contenido2">
+                  <div class="texto">
+                    <h2>Party Loyalty</h2>
+                  <p>Those who consider themselves to be strong partisans, 
+                      strong Democrats and strong Republicans respectively, 
+                      tend to be the most faithful in voting for their party's
+                       nominee for office and legislation that backs their party's agenda.</p>
+  
                   
-      </div>
-
-
-        <div class="accordion md-accordion accordion-1" id="accordionEx23" role="tablist">
-            <div class="card">
-              <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading96">
-                <h5 class="text-uppercase mb-0 py-1">
-                  <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapse96" aria-expanded="true"
-                    aria-controls="collapse96">
-                    Table
-                  </a>
-                </h5>
-              </div>
-              <div id="collapse96" class="collapse" role="tabpanel" aria-labelledby="heading96" data-parent="#accordionEx23">
-                <div class="card-body">
+                          </div>
+                           
+                           <div class="estadisticaTabla">
+                              <h2>House at a Glance</h2>
+                              <table id="Mitabla" class="table table-sm table-dark">
+                                <thead>
+                                  <tr>
+                                    <th>Party</th>
+                                    <th>Nº of Reps.</th>
+                                    <th>% Votes w/Party</th> 
+                                  </tr>
+                                   </thead>
+                                <tbody id="miTablaStats"></tbody>
+            
+                              </table>
+                            </div>
+            </div>
+            <div class="DosTablas">
+                <div class="estadisticaTabla2">
+                    <h2 class="tituloModif">Least Loyal (Bottom 10% Party)</h2>
+                    <table id="Mitabla" class="table table-sm table-dark">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Nº Party Votes</th>
+                          <th>% Party Votes</th> 
+                        </tr>
+                         </thead>
+                      <tbody id="miTablaBottom"></tbody>
+            
+                    </table>
+                  </div>
+            
+                  <div class="estadisticaTabla2">
+                      <h2 class="tituloModif">Most Loyal (Top 10% Party)</h2>
+                      <table id="Mitabla" class="table table-sm table-dark">
+                        <thead>
+                          <tr>
+                              <th>Name</th>
+                              <th>Nº Party Votes</th>
+                              <th>% Party Votes</th> 
+                          </tr>
+                           </thead>
+                        <tbody id="miTablaTop"></tbody>
+            
+                      </table>
+                    </div>    
+                  </div>
+       
                   
-        <div class="estiloTabla">
-                  <table class="table table-sm table-dark">
-                    <thead>
-                      <tr>
-                        <th>Full Name</th>
-                        <th>Party</th>
-                        <th>State</th>
-                        <th>Years in Office</th>
-                        <th>% Votes w/Party</th>
-                      </tr>
-                    </thead>
-                    <tbody id="miTabla"></tbody>
-                  </table>
-</div>
-</div>
-</div>
-</div>
+     
+
+
+        
+
         
         <div class="footer"> 
           &copy; 2016 TGIF &#124 All Rights Reserved
             
         </div>
         <script src="-congress-113-house.js"></script>
-        <script src="main.js"></script>
+        <script src="Estadisticas-Party-house.js"></script>
 </body>
 </html>

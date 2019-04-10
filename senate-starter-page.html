@@ -1,107 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+            
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
+<!-- <script src= "https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></script>
+<script src= "https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+<link rel="stylesheet" href="style.css"> 
+
+            <title>Senate</title>
     </head>
     
     <body>
-         <nav>
-          <div>
-            <div>
-              <a href="#">TGIF</a>
-            </div>
-            <ul >
-              <li><a href="#">Home</a></li>
-              <li >
-                <a href="#">Congress 113</a>
-                <ul >
-                  <li><a href="#">Senate</a></li>
-                  <li><a href="#">House</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>        
-  
+        
 
-        <header>            
-            <div>
-            </div>
-        </header>
-        <!--Table container-->
-        <div>
+        <div class="cabecera">
+        <div class="logo"><img src="TGIF_Logo_2018.png" width="200" height="100" alt="TGIF"></div>
+        
+        <div class="iconoemail"> <img src="carta.png" width="30" height="30" alt="email">
+             <a class="email" href="mailto:keat_9@hotmail.com"> info@tgif.net</a></div>       
+        </div>
+
+        <div class="menu">
+          
+            <div class ="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <a class="sinHipervinculo" href= "home-starter-page.html" ><button type="button" class="btn btn-secondary">Home </button></a>
+              
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn
+                   btn-secondary dropdown-toggle" data-toggle="dropdown" 
+                   aria-haspopup="true" aria-expanded="false">
+                    Congress 113
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="house-starter-page.html">House</a>
+                    <a class="dropdown-item" href="senate-starter-page.html">Senate</a>
+                  </div>
+                </div>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn
+                   btn-secondary dropdown-toggle" data-toggle="dropdown" 
+                   aria-haspopup="true" aria-expanded="false">
+                    Attendance
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="attendance-starter-page-house.html"">House</a>
+                    <a class="dropdown-item" href="attendance-starter-page-senate.html">Senate</a>
+                  </div>
+                </div>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn
+                   btn-secondary dropdown-toggle" data-toggle="dropdown" 
+                   aria-haspopup="true" aria-expanded="false">
+                    Party Loyalty
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="party-loyalty-starter-page-house.html">House</a>
+                    <a class="dropdown-item" href="party-loyalty-starter-page-senate.html">Senate</a>
+                  </div>
+                </div>
+              </div>
+                       </div>
+       
+        <div class="Contenido">
             <h2>Senators</h2>
-            <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
-    	    <table>
-                <thead>
-                    <tr>
-                        <th>Members</th>
-                        <th>First name</th>
-                        <th>Middle name</th>
-                        <th>Last name</th>
+            <p>First convened in 1789, the composition and powers of the Senate
+                 are established in Article One of the U.S. Constitution. Each 
+                 state is represented by two senators, regardless of population,
+                  who serve staggered six-year terms. The Senate has several exclusive 
+                  powers not granted to the House, including consenting to treaties as 
+                  a precondition to their ratification and consenting to or confirming 
+                  appointments of Cabinet secretaries, federal judges, other federal 
+                  executive officials, military officers, regulatory officials, 
+                  ambassadors, and other federal uniformed officers, as well as trial 
+                  of federal officials impeached by the House.</p>
+        </div>
+
+<div class="filtros">
+        <div class="botones">
+             <div> <b>Filter by Party</b></div>
+                <div class= "espacioBotones"><input type="checkbox" id="rep" value= "R"> <label for="rep"> Republican</label></div>               
+                <div class= "espacioBotones"><input type="checkbox" id="dem" value= "D"><label for="dem">Democrat</label></div>
+                <div class= "espacioBotones"><input type="checkbox" id="ind" value= "I"><label for="ind">Independent</label></div>
+              </div>
+              
+                
+              <div class="botonDesplegable">
+                <div> <b>Filter by State</b></div>
+                <select id="Filtro">
+                    <option value="All" id="Filtro">ALL</option>
+                </select>
+              </div>
+              
+  </div>
+
+
+                <div class="accordion md-accordion accordion-1" id="accordionEx23" role="tablist">
+                    <div class="card">
+                      <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading96">
+                        <h5 class="text-uppercase mb-0 py-1">
+                          <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapse96" aria-expanded="true"
+                            aria-controls="collapse96">
+                            Table
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapse96" class="collapse" role="tabpanel" aria-labelledby="heading96" data-parent="#accordionEx23">
+                        <div class="card-body">
+        
+
+<div class="estiloTabla">
+                  <table id="Mitabla" class="table table-sm table-dark">
+                    <thead>
+                      <tr>
+                        <th>Full Name</th>
                         <th>Party</th>
-                        <th>Total votes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Lamar</td>
-                        <td></td>
-                        <td>Alexander</td>
-                        <td>R</td>
-                        <td>657</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Kelly</td>
-                        <td>null</td>
-                        <td>Ayotte</td>
-                        <td>R</td>
-                        <td>657</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Roy</td>
-                        <td></td>
-                        <td>Blunt</td>
-                        <td>R</td>
-                        <td>657</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Barbara</td>
-                        <td>null</td>
-                        <td>Boxer</td>
-                        <td>D</td>
-                        <td>657</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Sherrod</td>
-                        <td></td>
-                        <td>Brown</td>
-                        <td>D</td>
-                        <td>657</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Richard</td>
-                        <td>M.</td>
-                        <td>Burr</td>
-                        <td>R</td>
-                        <td>657</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Tammy</td>
-                        <td>null</td>
-                        <td>Baldwin</td>
-                        <td>D</td>
-                        <td>657</td>
-                    </tr>
-                </tbody>
-            </table>
-    	</div>    
+                        <th>State</th>
+                        <th>Years in Office</th>
+                        <th>% Votes w/Party</th>
+                      </tr>
+                    </thead>
+                    <tbody id="miTabla"></tbody>
+
+                  </table>
+</div>
+</div>
+</div>
+</div>
+</div>
+        <div class="footer"> 
+        
+          &copy; 2016 TGIF &#124 All Rights Reserved
+
+
+        </div>
+        <script src="-congress-113-senate.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>
+
+
+

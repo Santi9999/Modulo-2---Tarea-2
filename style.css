@@ -1,0 +1,172 @@
+body {
+    background: url(fondo.jpg);
+    background-attachment: fixed;
+    /* background-size: 100%; */
+}
+
+.cabecera{
+    width: 80%;
+    margin-left: 10%;
+}
+.iconoemail{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.menu{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+
+}
+.email{
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    padding-left: 5px;
+    margin-right: 10px;
+    font-family: Impact;
+}
+
+.botonhome{
+
+font-size: 25px;
+font-family: Impact;
+color: black;
+}
+
+.botoncongres113{
+    
+    font-size: 25px;
+    font-family: Impact;
+    color: black;
+    }
+
+.footer{
+        background-color: black;
+        display: flex;
+        justify-content: center; 
+        top: 100%;
+        color: white;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 100px;
+    
+        
+}
+
+.Contenido{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+.estiloTabla{
+    width: 100%;
+}
+
+.desglosa{
+    width: 80%;
+    margin: 10%; 
+}
+
+.dropdown-item:hover {
+background-color:#aae2e6;
+
+}
+
+.btn-group{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black; 
+
+}
+
+button:hover{
+    color: white;
+}
+
+.btn-secondary{
+background-color: black;
+}
+.sinHipervinculo{
+color: white;
+
+}
+
+
+.botones{
+    display: flex;
+    justify-content: left;
+    width: 80%;   
+}
+
+.espacioBotones{
+margin-left: 20px;
+}
+
+.card{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.card-body{
+    padding: 0px;
+
+}
+.card-header{
+    background-color:black;
+}
+
+.botonDesplegable{
+    display: flex;
+    
+}
+
+.filtros{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.texto{
+    width: 50%;
+}
+
+
+.Contenido2{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 10%;
+    width: 80%;
+    border-bottom: solid 3px black;
+}
+
+.estadisticaTabla{
+    margin-left: 10%;
+    width: 50%;
+}
+
+.DosTablas{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.estadisticaTabla2{
+    width: 50%;
+    padding: 20px;
+}
+
+.tituloModif{
+    font-size: 20px;
+}
